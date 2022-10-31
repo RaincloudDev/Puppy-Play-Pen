@@ -1,0 +1,34 @@
+   <section class="dog-display">
+        <?php 
+        $sql= "SELECT * FROM customerbase WHERE hiring = 'yes';";
+        $result = mysqli_query($conn, $sql);
+        $resultCheck = mysqli_num_rows($result);
+       
+        
+        if ($resultCheck > 0) {
+            while($row = mysqli_fetch_assoc($result)){
+                
+                
+                echo"<div class=\"dog-container\">
+                    <div class=\"dog-title\">
+                        <img src=\"img/alchemylabCOOKIECLICKERASSET.png\">
+                        <h4 class=\"dog-name\"> $row[customerPetName] </h4>
+                    </div>
+                        
+
+                    <section class=\"dog-numbers\">
+                        <div class=\"dog-owned\">
+                            <p>Customer:</p>
+                            <p class=\"dog-owner\"> $row[customerName]</p>
+                        </div>
+                        <!--displays number of buildings qued up by player-->
+                        <div class=\"dog-income\">
+                            <p>Income:</p>
+                            <p class=\"income-value\"> $row[customerIncomeValue] </p>
+                        </div>  
+                    </section>
+                </div>";  
+            }
+        }?>
+     </section>
+        </section>

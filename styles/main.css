@@ -1,0 +1,313 @@
+/*darkmode*/
+html {
+    background-color: black;
+}
+*{
+    color: aliceblue;   
+    
+}
+
+/*clean a and lists*/
+a{
+    text-decoration: none;
+    
+}
+a:hover{
+    background-color: rgba(128, 128, 128, 0.363);
+    color:aquamarine;
+    
+}
+ul, ol{
+    text-align: center;
+    list-style-type: none;
+}
+body{
+    diplay: flex;
+    flex-flow: column;
+    min-height: 80vmin;
+    max-height: 80vmin;
+    
+}
+
+
+
+
+/*header*/
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin:auto;
+}
+.header-title{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+    /*resources*/
+    .list-group-row{
+        display: flex;
+        justify-content: space-around;
+        min-width: 35%;
+
+    }
+
+    .resources{
+        text-align: left;
+        width: 12%;
+        padding:0 2rem;
+        background-color:  rgb(71, 55, 77);
+    }
+
+
+
+/*main area, make it sit pretty in the middle with three main columns.
+main nav, graphic display, and gameplay interface*/
+main{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    
+    margin: auto;
+    background-color: darkslateblue;
+    min-height: 45vh;
+}
+
+#main-nav{
+background-color:cadetblue;
+display: flex;
+flex-flow: column;
+justify-content: center;
+flex: 1;
+}
+    .main-nav-item{
+        font-size: 20px;
+        background-color:rgba(128, 128, 128, 0.507);
+        border-radius: 5px 8px;
+        margin:1rem 0;
+        width: 70%;
+    }
+
+#display{
+    display: flex;
+    flex:3;
+    flex-flow: column;
+    height: 80vmin;
+    align-items: center;
+    background-image: url(../img/puppywallpaper.png);
+    background-repeat: no-repeat, repeat;
+    background-color: #cccccc;
+    background-size: cover;
+    background-repeat: none;
+    overflow-y: scroll;
+}
+/*scrollbar styles*/
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px  rgb(10, 94, 61);
+    border-radius: 3px;
+    
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(10, 94, 61);
+    border-radius: 3px;
+    max-height: 15px;
+  }
+
+
+#interface{
+    background-color: rgba(18, 161, 107, 0.534);
+    flex: 1;
+}
+
+/*Dog card. Displays dog information in available and current client sections. Dog Card should have an icon on top, with a centered name underneath. below that should be a section with four containers nested inside. each container will represent the current hunger, thirst, play, and maintenence requirements of the dog. The background of this card may be useful as a color or level indicator related to customer satisfaction. much like hunger, but instead of death on depletion the dog goes back to the available client section with minimum hunger, etc.*/
+
+.dog-display{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 13px;
+    border: 3px solid rgb(87, 94, 87);
+    border-radius: 20px 32px 15% 57px;
+    overflow:hidden;
+    
+}
+
+.dog-container{
+    display: flex;
+    background-color:darkolivegreen;
+    max-width: 8rem;
+    margin: 7px;
+    border: 3px solid rgb(87, 94, 87);
+    border-radius: 20px 32px 15% 57px;
+    
+    overflow: hidden;
+}
+
+
+.dog-title{
+    flex:inherit;
+    flex-flow: column;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.dog-name{
+    flex:inherit;
+    color: tomato;
+    
+}
+
+.dog-numbers{
+    flex:inherit;
+}
+
+.dog-owned{
+    flex:inherit;
+    
+}
+
+.dog-owner{
+    color:aliceblue;
+    font-size: 20px;
+}
+
+.dog-income{
+    flex:inherit;
+    
+}
+
+.income-value{
+    color:cadetblue;
+    font-size: 15px;
+}
+
+/* TESTING CARD STYLES UPDATING DESIGN*/
+.test-display{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    
+    margin: 13px;
+    border: 3px solid rgb(87, 94, 87);
+    border-radius: 20px 32px 15% 57px;
+    
+}
+
+.test-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    background-color:darkolivegreen;
+    min-width: 18rem;
+    margin: 7px;
+    border: 3px solid rgb(87, 94, 87);
+    border-radius: 15px;
+    
+    overflow: hidden;
+}
+
+
+.test-title{
+    flex:inherit;
+    flex-flow: column;
+    align-self: center;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.test-name{
+    flex:inherit;
+    color: tomato;
+    
+}
+
+.test-numbers{
+    flex:inherit;
+}
+
+.test-four-container{
+    display: flex;
+    max-width: 20%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid white;
+}
+
+.test-four-container-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 49.75%;
+    margin-bottom: .5%;   
+    background-color: red;
+    border: 1px solid cyan;
+}
+.test-four-container-item:nth-child(odd) {
+    background: #F00;
+    flex: 0 0 50px;
+  }
+
+small{
+    font-size: 8px;
+}
+
+.test-owner{
+    color:aliceblue;
+    font-size: 20px;
+}
+
+.test-income{
+    flex:inherit;
+    
+}
+
+.test-income-value{
+    color:cadetblue;
+    font-size: 15px;
+}
+
+/*page-title, styles titles like "planet" and "research" on the respective page*/
+
+.page-title{
+    font-size: 1.5rem;
+    padding: 2px 48px;
+    border: 1px solid rgb(87, 94, 87);
+    border-radius: 6px;
+    letter-spacing: .15em;
+    background-color: rgba(128, 128, 128, 0.250);   
+}
+
+
+/*action image*/
+
+.action-image{
+    display: flex;
+    /*min-width: 55%;*/
+    max-width: 55%;
+    max-height: 300px;
+    height:auto;
+    border: 3px solid rgb(87, 94, 87);
+    border-radius: 20px 32px 15% 57px;
+    margin: 5px;
+    
+}
+
+/*footer*/
+footer{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}

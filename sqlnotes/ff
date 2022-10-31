@@ -1,0 +1,80 @@
+ <div class="test-container">
+                    <div class="test-title">
+                        <img src="img/alchemylabCOOKIECLICKERASSET.png">
+                        <h4 class="test-name"> Mittens </h4>
+                    </div>
+                        
+
+                    <section class="test-numbers">
+                        <div class="test-owned">
+                            <p>Customer:</p>
+                            <p class="test-owner">Sally Vanderbuilt</p>
+                        </div>
+                        <!--displays number of tests qued up by player-->
+                        <div class="test-income">
+                            <p>Income:</p>
+                            <p class="test-income-value"> $15 </p>
+                        </div>  
+                    </section>
+                </div>
+        
+
+                .test-display{
+                    display: flex;
+                    flex-flow: row;
+                    justify-content: space-around;
+                    margin: 13px;
+                    border: 3px solid rgb(87, 94, 87);
+                    border-radius: 20px 32px 15% 57px;
+                    
+                }
+                
+                .test-container{
+                    display: flex;
+                    background-color:darkolivegreen;
+                    max-width: 8rem;
+                    margin: 7px;
+                    border: 3px solid rgb(87, 94, 87);
+                    border-radius: 20px 32px 15% 57px;
+                    
+                    overflow: hidden;
+                }
+                
+                
+                .test-title{
+                    flex:inherit;
+                    flex-flow: column;
+                    height: 100%;
+                    justify-content: center;
+                    align-content: center;
+                }
+                
+                .test-name{
+                    flex:inherit;
+                    color: tomato;
+                    
+                }
+                
+                .test-numbers{
+                    flex:inherit;
+                }
+                
+                .test-owned{
+                    flex:inherit;
+                    
+                }
+                
+                .test-owner{
+                    color:aliceblue;
+                    font-size: 20px;
+                }
+                
+                .test-income{
+                    flex:inherit;
+                    
+                }
+                
+                .test-income-value{
+                    color:cadetblue;
+                    font-size: 15px;
+                }
