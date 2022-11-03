@@ -19,25 +19,20 @@
             while($row = mysqli_fetch_assoc($result)){
                 
                 
-                echo"<div class=\"dog-container\">
-                    <div class=\"dog-title\">
-                        <img src=\"img/alchemylabCOOKIECLICKERASSET.png\">
-                        <h4 class=\"dog-name\"> $row[customerPetName] </h4>
+                echo"    <div class=new-dog-container>
+                <img class=\"new-dog-icon\" src=\"http://localhost/Puppy Play Pen/img/dogs/$row[customerPetIcon]\">
+                    <div class=\"new-dog-title\">
+                    <a href=\"\"><p class=\"new-dog-name\">$row[customerPetName]</p></a>
+                    <p class=\"new-dog-name-2\">$row[customerIncomeValue]</p>
                     </div>
-                        
-
-                    <section class=\"dog-numbers\">
-                        <div class=\"dog-owned\">
-                            <p>Customer:</p>
-                            <p class=\"dog-owner\"> $row[customerName]</p>
-                        </div>
-                        <!--displays number of dogs qued up by player-->
-                        <div class=\"dog-income\">
-                            <p>Income:</p>
-                            <p class=\"income-value\"> $row[customerIncomeValue] </p>
-                        </div>  
-                    </section>
-                </div>";  
+                <hr>
+                <div class=\"new-dog-bar-container\">
+                    <section class=\"new-dog-bar\" id=\"new-dog-hunger\"><img src=\"http://localhost/Puppy Play Pen/img/20x20/food20x20.png\"> </section>
+                    <section class=\"new-dog-bar\" id=\"new-dog-thirst\"><img src=\"http://localhost/Puppy Play Pen/img/20x20/water20x20.png\"></section>
+                    <section class=\"new-dog-bar\" id=\"new-dog-play\"><img src=\"http://localhost/Puppy Play Pen/img/20x20/play20x20.png\"></section>
+                    <section class=\"new-dog-bar\" id=\"new-dog-upkeep\"><img src=\"http://localhost/Puppy Play Pen/img/20x20/upkeep20x20.png\"></section>
+                </div>
+            </div>";  
             }
         }?>
      </section>

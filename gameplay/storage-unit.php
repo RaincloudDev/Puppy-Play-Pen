@@ -1,75 +1,55 @@
+<?php
+ include_once "connect.php";
+ ?>
+
 <section id="display">
     <!--Displays graphics based on what the player is currently doing. ie showing Research Facility while selecting active research-->
     <h2 class="page-title">Storage Unit</h2>
     <?php echo "<img class='action-image' src='http://localhost/RPGnewBasicOgame/img/mines.png'>"?>
         <section class="building-display">
-        <div class="building-container">
-            <div class="building-title">
-                <img src="img/alchemylabCOOKIECLICKERASSET.png">
-                <h4 class="building-name">Cash</h4>
+            <div>
+                <h4>Your Stuff is in here!</h4>
+                <p>Click about to find it..</p>
             </div>
-            <section class="building-numbers">
-                <div class="building-owned">
-                    <p>owned:</p>
-                    <p class="owned-value">0</p>
+            <div>
+            <section class="branch-display">
+            
+            <?php 
+        $sql= "SELECT * FROM `branch` WHERE 1";
+        $result = mysqli_query($conn, $sql);
+        $resultCheck = mysqli_num_rows($result);
+       
+        
+        if ($resultCheck > 0) {
+            while($row = mysqli_fetch_assoc($result)){
+                
+                
+                echo"<div class=branch-container>
+                <img class=\"new-dog-icon\" src=\"http://localhost/Puppy Play Pen/img/bankCOOCKIECLICKERASSET.png\">
+                    <div class=\"new-dog-title\">
+                    <a href=\"\"><p class=\"new-dog-name\">$row[branchName]</p></a>
+                    <p class=\"new-dog-name-2\">$row[branchDesc]</p>
+                    </div>
+                <hr>
+                <div class=\"new-dog-title\">
+                    <span class=\"new-dog-bar\" id=\"new-dog-hunger\"><img src=\"http://localhost/Puppy Play Pen/img/20x20/food20x20.png\"></span>
+                    <span><p>Lvl UP</p></span>
+                    
                 </div>
-                <!--displays number of buildings qued up by player-->
-                <div class="building-pending">
-                    <p>pending:</p>
-                    <p class="pending-value">0</p>
-                </div>  
+            </div>";  
+            }
+        }?>
+    
+            
+
+
+
+
+
+
+    
             </section>
-        </div>
-        <div class="building-container">
-            <div class="building-title">
-                <img src="img/wizardtowerCOOKIECLICKERASSET.png">
-                <h4 class="building-name">Toys</h4>
             </div>
-            <section class="building-numbers">
-                <div class="building-owned">
-                    <p>owned:</p>
-                    <p class="owned-value">0</p>
-                </div>
-                <!--displays number of buildings qued up by player-->
-                <div class="building-pending">
-                    <p>pending:</p>
-                    <p class="pending-value">0</p>
-                </div>  
-            </section>
-        </div>
-        <div class="building-container">
-            <div class="building-title">
-                <img src="img/factoryCOOKIECLICKERASSET.png">
-                <h4 class="building-name">Kibble</h4>
-            </div>
-            <section class="building-numbers">
-                <div class="building-owned">
-                    <p>owned:</p>
-                    <p class="owned-value">0</p>
-                </div>
-                <!--displays number of buildings qued up by player-->
-                <div class="building-pending">
-                    <p>pending:</p>
-                    <p class="pending-value">0</p>
-                </div>  
-            </section>
-        </div>
-        <div class="building-container">
-            <div class="building-title">
-                <img src="img/shipmentCOOKIECLICKERASSET.png">
-                <h4 class="building-name">Treats</h4>
-            </div>
-            <section class="building-numbers">
-                <div class="building-owned">
-                    <p>owned:</p>
-                    <p class="owned-value">0</p>
-                </div>
-                <!--displays number of buildings qued up by player-->
-                <div class="building-pending">
-                    <p>pending:</p>
-                    <p class="pending-value">0</p>
-                </div>  
-            </section>
         </section>
     </div>
         </section>

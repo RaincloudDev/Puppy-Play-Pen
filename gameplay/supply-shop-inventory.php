@@ -1,79 +1,58 @@
 <section id="display">
     <!--Displays graphics based on what the player is currently doing. ie showing Research Facility while selecting active research-->
     <h2 class="page-title">Supply Shop</h2>
+    <div>
     <?php echo "<img class='action-image' src='http://localhost/Puppy Play Pen/img/supply-shop.png'>"?>
         <section class="building-display">
-        <div class="building-container">
-            <div class="building-title">
-                <img src="img/alchemylabCOOKIECLICKERASSET.png">
-                <h4 class="building-name">Cash</h4>
+            
+        <div class=new-dog-container>
+        <img class="new-dog-icon" src="http://localhost/Puppy Play Pen/img/bankCOOCKIECLICKERASSET.png">
+            <div class="new-dog-title">
+            <a href=""><p class="new-dog-name">Good Kibble</p></a>
+            <p class="new-dog-name-2">12</p>
             </div>
-            <section class="building-numbers">
-                <div class="building-owned">
-                    <p>owned:</p>
-                    <p class="owned-value">0</p>
-                </div>
-                <!--displays number of buildings qued up by player-->
-                <div class="building-pending">
-                    <p>pending:</p>
-                    <p class="pending-value">0</p>
-                </div>  
-            </section>
+        <hr>
+        <div class="new-dog-title">
+            <span class="new-dog-bar" id="new-dog-hunger"><img src="http://localhost/Puppy Play Pen/img/20x20/food20x20.png"></span>
+            <span><p>+25</p></span>
+            
         </div>
-        <div class="building-container">
-            <div class="building-title">
-                <img src="img/wizardtowerCOOKIECLICKERASSET.png">
-                <h4 class="building-name">Toys</h4>
+    </div>
+
+    <div class=new-dog-container>
+        <img class="new-dog-icon" src="http://localhost/Puppy Play Pen/img/bankCOOCKIECLICKERASSET.png">
+            <div class="new-dog-title">
+            <a href=""><p class="new-dog-name">Better Kibble</p></a>
+            <p class="new-dog-name-2">17</p>
             </div>
-            <section class="building-numbers">
-                <div class="building-owned">
-                    <p>owned:</p>
-                    <p class="owned-value">0</p>
-                </div>
-                <!--displays number of buildings qued up by player-->
-                <div class="building-pending">
-                    <p>pending:</p>
-                    <p class="pending-value">0</p>
-                </div>  
-            </section>
+        <hr>
+        <div class="new-dog-title">
+        <span class="new-dog-bar" id="new-dog-hunger"><img src="http://localhost/Puppy Play Pen/img/20x20/food20x20.png"></span>
+            <span><p>+55</p></span>
+          
         </div>
-        <div class="building-container">
-            <div class="building-title">
-                <img src="img/factoryCOOKIECLICKERASSET.png">
-                <h4 class="building-name">Kibble</h4>
+    </div>
+
+    <div class=new-dog-container>
+        <img class="new-dog-icon" src="http://localhost/Puppy Play Pen/img/bankCOOCKIECLICKERASSET.png">
+            <div class="new-dog-title">
+            <a href=""><p class="new-dog-name">Cheap Kibble</p></a>
+            <p class="new-dog-name-2">7</p>
             </div>
-            <section class="building-numbers">
-                <div class="building-owned">
-                    <p>owned:</p>
-                    <p class="owned-value">0</p>
-                </div>
-                <!--displays number of buildings qued up by player-->
-                <div class="building-pending">
-                    <p>pending:</p>
-                    <p class="pending-value">0</p>
-                </div>  
-            </section>
+        <hr>
+        <div class="new-dog-title">
+        <span class="new-dog-bar" id="new-dog-hunger"><img src="http://localhost/Puppy Play Pen/img/20x20/food20x20.png"></span>
+            <span><p>+10</p></span>
+            
         </div>
-        <div class="building-container">
-            <div class="building-title">
-                <img src="img/shipmentCOOKIECLICKERASSET.png">
-                <h4 class="building-name">Treats</h4>
-            </div>
-            <section class="building-numbers">
-                <div class="building-owned">
-                    <p>owned:</p>
-                    <p class="owned-value">0</p>
-                </div>
-                <!--displays number of buildings qued up by player-->
-                <div class="building-pending">
-                    <p>pending:</p>
-                    <p class="pending-value">0</p>
-                </div>  
-            </section>
+    </div>
+
         </section>
     </div>
         </section>
-    </section>
+        
+    
+    
         <section id="interface">
     <!--Interactive interface for gameplay-->
             <ol>

@@ -37,7 +37,7 @@
                 <li class="main-nav-item"><a href="home.php">Home</a></li>
                 <li class="main-nav-item"><a href="storage.php">Storage Unit</a></li>
                 <li class="main-nav-item"><a href="customers.php">Customers</a></li>
-                <li class="main-nav-item"><a href="research.php">Research</a></li>
+                <li class="main-nav-item"><a href="training.php">Training</a></li>
                 <li class="main-nav-item"><a href="supply-shop.php">Supply Shop</a></li>
                 <li class="main-nav-item"><a href="defense.php">Employees</a></li>
                 <li class="main-nav-item"><a href="park.php">Dog Park</a></li>
